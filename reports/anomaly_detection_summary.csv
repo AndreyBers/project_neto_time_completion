@@ -1,0 +1,4 @@
+method,anomaly_count,anomaly_share
+rolling_zscore,0,0.0
+stl_residual,14,0.09722222222222222
+isolation_forest,7,0.04861111111111111

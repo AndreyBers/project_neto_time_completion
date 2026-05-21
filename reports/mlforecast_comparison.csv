@@ -1,0 +1,4 @@
+MAE,RMSE,MAPE,sMAPE,model,group,features
+17.180345700031676,19.361013088942844,3.5638330040429844,3.598925601326756,LinearRegression,ml,"lags: 1,2,3,6,12; date_features: month,quarter"
+24.468076946705978,33.3348229153165,4.8506446843956725,4.896579712064299,RandomForestRegressor,ml,"lags: 1,2,3,6,12; date_features: month,quarter"
+47.826690694252704,62.76610915799113,9.243700209754579,9.73818684689291,HistGradientBoostingRegressor,ml,"lags: 1,2,3,6,12; date_features: month,quarter"
