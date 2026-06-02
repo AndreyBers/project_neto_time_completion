@@ -185,8 +185,8 @@ project_neto_time/
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone https://github.com/AndreyBers/project_neto_time.git
-cd project_neto_time
+git clone https://github.com/AndreyBers/project_neto_time_completion.git
+cd project_neto_time_completion
 ```
 
 ### 2. Создать виртуальное окружение
