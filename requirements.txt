@@ -1,22 +1,9 @@
-pandas>=2.0
-numpy>=1.24
-scipy>=1.10
-matplotlib>=3.7
-scikit-learn>=1.3
-statsmodels>=0.14
-arch>=6.0
-jupyter>=1.0
-ipykernel>=6.0
-
-# Frameworks required by the assignment
-statsforecast>=1.7
-mlforecast>=0.10
-utilsforecast>=0.1
-
-# Deep learning block. Install on CPU or Colab if local installation is heavy.
-neuralforecast>=1.7
-torch>=2.0
-pytorch-lightning>=2.0
-
-# Optional. Prophet can be difficult to install on Windows, so the notebook treats it as optional.
-prophet>=1.1
+# Файл оставлен для совместимости со старым способом запуска проекта.
+# Основным источником зависимостей является pyproject.toml и Poetry.
+numpy>=1.26.4,<2.0
+pandas>=2.2.2,<3.0
+scikit-learn>=1.5.1,<2.0
+statsmodels>=0.14.2,<0.15
+matplotlib>=3.9.1,<4.0
+statsforecast>=1.7.8,<2.0
+mlforecast>=0.13.4,<1.0

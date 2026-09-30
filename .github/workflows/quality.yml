@@ -1,0 +1,39 @@
+name: Проверка качества
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Получение репозитория
+        uses: actions/checkout@v4
+
+      - name: Установка Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Установка Poetry
+        run: pip install poetry
+
+      - name: Настройка Poetry
+        run: poetry config virtualenvs.in-project true
+
+      - name: Установка зависимостей
+        run: poetry install --with dev
+
+      - name: Ruff
+        run: poetry run ruff check src tests
+
+      - name: Black
+        run: poetry run black --check src tests
+
+      - name: Mypy
+        run: poetry run mypy src/time_series_project
+
+      - name: Pytest
+        run: poetry run pytest
